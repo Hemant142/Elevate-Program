@@ -1,0 +1,175 @@
+/* Base styles */
+.detail-page {
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.detail-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.character-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.character-details {
+  padding: 24px;
+}
+
+.character-name {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #1e1e2f;
+  font-weight: 700;
+}
+
+.character-detail {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #333;
+}
+
+.character-detail strong {
+  color: #000;
+  font-weight: 600;
+}
+
+.detail-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eee;
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.detail-footer {
+  margin-top: auto;
+  padding: 16px;
+  text-align: center;
+  background-color: #eaeef2;
+  width: 100%;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.back-button {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #244c9c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+  background-color: #183570;
+}
+
+/* Responsive Styles */
+
+/* Mobile: Full width and single column layout */
+@media (max-width: 480px) {
+  .detail-card {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .character-name {
+    font-size: 1.6rem;
+  }
+
+  .character-detail {
+    font-size: 0.9rem;
+  }
+
+  .detail-footer {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .back-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet: Adjustments for screen size between 480px and 768px */
+@media (max-width: 768px) {
+  .detail-card {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  .character-name {
+    font-size: 1.8rem;
+  }
+
+  .character-detail {
+    font-size: 1rem;
+  }
+
+  .detail-footer {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  .back-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Desktop: Adjustments for larger screens */
+@media (min-width: 1024px) {
+  .detail-card {
+    width: 60%;
+    max-width: 700px;
+    padding: 24px;
+  }
+
+  .character-name {
+    font-size: 2rem;
+  }
+
+  .character-detail {
+    font-size: 1.1rem;
+  }
+
+  .detail-footer {
+    font-size: 1.1rem;
+    padding: 16px;
+  }
+
+  .back-button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+  }
+}

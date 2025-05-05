@@ -1,0 +1,39 @@
+.container {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+}
+
+.loginPrompt {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.login,
+.logout {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.login {
+  background-color: #244c9c;
+  color: white;
+}
+
+.logout {
+  background-color: #ff5f5f;
+  color: white;
+}
+
+.login:hover,
+.logout:hover {
+  opacity: 0.9;
+}

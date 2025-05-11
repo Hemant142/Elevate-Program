@@ -1,0 +1,39 @@
+.navbar {
+  border: 2px solid #eee;
+  padding: 2rem;
+  text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  transition: filter 300ms;
+}
+
+.navbar-link:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.navbar-button {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background: none;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-weight: bold;
+  transition: filter 300ms;
+}
+
+.navbar-button:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}

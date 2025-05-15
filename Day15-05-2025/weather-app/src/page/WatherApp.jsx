@@ -17,7 +17,7 @@ export default function WatherApp() {
       <SearchBar city={city} setCity={setCity} onSearch={handleSearch} />
       {isLoading && <Loading />}
       {error && <Error message={error} />}
-      {data && <WeatherInfo weather={data} />}
+      {data && <WeatherInfo weatherData={data} />}
     </>
   );
 }

@@ -31,14 +31,25 @@ const useFetchWeather = (city) => {
 
         const response = res.data;
 
-        const transformed = {
-          name: response.name,
-          temp: response.main.temp,
-          condition: response.weather[0].main,
-          humidity: response.main.humidity,
-          wind: response.wind.speed,
-        };
+        // const transformed = {
+        //   name: response.name,
+        //   temp: response.main.temp,
+        //   condition: response.weather[0].main,
+        //   humidity: response.main.humidity,
+        //   wind: response.wind.speed,
+        // };
 
+        const transformed = {
+          location: response.name,
+          country: response.sys.country,
+          lastUpdated: "just now",
+          temperature: Math.round(response.main.temp),
+          feelsLike: Math.round(response.main.feels_like),
+          condition: response.weather[0].description,
+          icon: response.weather[0].icon, // Add this line
+          humidity: response.main.humidity,
+          windSpeed: response.wind.speed,
+        };
         setData(transformed);
       } catch (err) {
         console.log(err, "err");

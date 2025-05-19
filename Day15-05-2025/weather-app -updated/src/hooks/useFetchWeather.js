@@ -27,6 +27,8 @@ const useFetchWeather = (city) => {
           }
         );
 
+        console.log(res, "response");
+
         const response = res.data;
 
         // const transformed = {
